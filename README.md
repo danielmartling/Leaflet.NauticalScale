@@ -1,5 +1,5 @@
 # Leaflet.NauticalScale
-Extension to the Leaflet Scale control that shows nautical miles.
+Extension to the Leaflet Scale control that adds nautical miles.
 
 ## What it does
 
