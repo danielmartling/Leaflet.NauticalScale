@@ -45,7 +45,7 @@ const scale = new L.Control.ScaleNautical({
 
 
 ## Screenshots
-|                                         |                                                                                                 |
+|                                         | Pictures                                                                                        |
 | --------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | Nautical miles and kilometers           | ![Screenshot showing control with nautical miles and kilometers](img/screenshot1.png)           |
 | Tenths of nautical miles and kilometers | ![Screenshot showing control with tenths of nautical miles and kilometers](img/screenshot2.png) |
