@@ -1,5 +1,5 @@
 # Leaflet.NauticalScale
-Extension to the Leaflet Scale control that adds nautical miles.
+Extension to the Leaflet Scale control that adds nautical miles. [Example map](https://danielmartling.github.io/Leaflet.NauticalScale/example/).
 
 ## What it does
 
@@ -14,6 +14,8 @@ Adds Nautical Miles (1 NM = 1852 m) to the default [Leaflet scale control](https
 3. Include eg. `<script src="src/leaflet.nauticalscale.js"></script>` in the head of your html file.
 
 ## Usage example
+
+See the [example map](https://danielmartling.github.io/Leaflet.NauticalScale/example/).
 
 Add the scale to your map:
 ```
