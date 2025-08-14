@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nautical scale example</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="../leaflet.nauticalscale.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+
+<body>
+    <div id="map"></div>
+</body>
+
+<script>
+
+    // Leaflet map
+    var map = L.map('map', {
+        center: [60.24521, 18.68388],
+        zoom: 13,
+        layers: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.</a>.'
+        })
+    });
+
+    // Add scale with default options
+    const scale = new L.Control.ScaleNautical().addTo(map);
+
+    // Add scale with custom options
+    const options = {
+        position: "bottomleft",
+        imperial: true,
+        maxWidth: 300,
+        updateWhenIdle: true
+    }
+
+    const scale2 = new L.Control.ScaleNautical(options).addTo(map);
+
+</script>
+
+</html>
