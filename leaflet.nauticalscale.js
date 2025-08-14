@@ -12,7 +12,8 @@ L.Control.ScaleNautical = L.Control.Scale.extend({
         imperial: false,
         metric: true,
         maxWidth: 100,
-        updateWhenIdle: false
+        updateWhenIdle: false,
+        nauticalMilesUnit: "NM"
     },
 
     onAdd: function (map) {
@@ -72,10 +73,10 @@ L.Control.ScaleNautical = L.Control.Scale.extend({
         if (maxCables >= 10) {
             maxNauticalMiles = maxMeters / 1852;
             nauticalMiles = L.Control.Scale.prototype._getRoundNum.call(this, maxNauticalMiles);
-            this._updateScale(this._nScale, nauticalMiles + ' NM', nauticalMiles / maxNauticalMiles);
+            this._updateScale(this._nScale, nauticalMiles + ' ' + this.options.nauticalMilesUnit, nauticalMiles / maxNauticalMiles);
         } else {
             cables = L.Control.Scale.prototype._getRoundNum.call(this, maxCables);
-            this._updateScale(this._nScale, (cables / 10).toFixed(1) + ' NM', cables / maxCables);
+            this._updateScale(this._nScale, (cables / 10).toFixed(1) + ' ' + this.options.nauticalMilesUnit, cables / maxCables);
         }
     },
 

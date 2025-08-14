@@ -10,7 +10,7 @@ Adds Nautical Miles (1 NM = 1852 m) to the default [Leaflet scale control](https
 ## Install instructions
 
 1. Clone the repo.
-2. Copy the `leaflet.nauticalscale.js` to your project. 
+2. Copy `leaflet.nauticalscale.js` to your project. 
 3. Include eg. `<script src="src/leaflet.nauticalscale.js"></script>` in the head of your html file.
 
 ## Usage example
@@ -34,18 +34,19 @@ const scale = new L.Control.ScaleNautical({
 
 ### Options table
 
-| Option           | Type      | Default      | Description                                                              |
-| ---------------- | --------- | ------------ | ------------------------------------------------------------------------ |
-| `position`       | `String`  | `bottomleft` | Position of the control on the map.                                      |
-| `metric`         | `Boolean` | `true`       | Show the metric scale (meters/kilometers).                               |
-| `imperial`       | `Boolean` | `false`      | Show the imperial scale (feet/miles).                                    |
-| `nautical`       | `Boolean` | `true`       | Show the nautical scale (NM).                                            |
-| `maxWidth`       | `Number`  | `100`        | Maximum width of the scale bar, in pixels.                               |
-| `updateWhenIdle` | `Boolean` | `false`      | If `true`, the control is updated only after the map has stopped moving. |
+| Option              | Type      | Default      | Description                                                              |
+| ------------------- | --------- | ------------ | ------------------------------------------------------------------------ |
+| `position`          | `String`  | `bottomleft` | Position of the control on the map.                                      |
+| `metric`            | `Boolean` | `true`       | Show the metric scale (meters/kilometers).                               |
+| `imperial`          | `Boolean` | `false`      | Show the imperial scale (feet/miles).                                    |
+| `nautical`          | `Boolean` | `true`       | Show the nautical scale (NM).                                            |
+| `maxWidth`          | `Number`  | `100`        | Maximum width of the scale bar, in pixels.                               |
+| `updateWhenIdle`    | `Boolean` | `false`      | If `true`, the control is updated only after the map has stopped moving. |
+| `nauticalMilesUnit` | `String`  | `NM`         | Unit label. For example `nm`, `M`, `'`, `NMi`, `sjömil`, etc.            |
 
 
 ## Screenshots
-|                                         | Pictures                                                                                        |
+|                                         |                                                                                                 |
 | --------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | Nautical miles and kilometers           | ![Screenshot showing control with nautical miles and kilometers](img/screenshot1.png)           |
 | Tenths of nautical miles and kilometers | ![Screenshot showing control with tenths of nautical miles and kilometers](img/screenshot2.png) |
