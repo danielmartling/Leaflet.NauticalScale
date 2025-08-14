@@ -1,6 +1,6 @@
 /*
  *  Leaflet Nautical Scale
- *  Version 1.0
+ *  Version 1.1
  *  Copyright (c) 2025 Daniel Martling
  * 
  *  A simple extension of the scale control that also shows nautical miles.
