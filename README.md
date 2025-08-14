@@ -3,7 +3,7 @@ Extension to the Leaflet Scale control that shows nautical miles.
 
 ## What it does
 
-Adds Nautical Miles (1 NM = 1852 m) to the default Leaflet scale control. Divides nautical miles into tenths (0.1 NM) if necessary.
+Adds Nautical Miles (1 NM = 1852 m) to the default [Leaflet scale control](https://leafletjs.com/reference.html#control-scale). Divides nautical miles into tenths (0.1 NM = 1 cable) if necessary.
 
 ![Scale control](img/screenshot3.png)
 
